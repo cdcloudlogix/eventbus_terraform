@@ -28,5 +28,5 @@ provider "aws" {
   version = "~> 2.6"
   alias   = "member"
 
-  profile = "default"
+  profile = "member"
 }
