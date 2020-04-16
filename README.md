@@ -47,6 +47,7 @@ variable "principals" {
 
 ### Member Account configuration
 
+```hcl
 module "member_account_events" {
   source = "./modules/ec2-events"
 
