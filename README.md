@@ -54,6 +54,7 @@ module "member_account_events" {
   create     = true
   name       = "main-account-ec2-events"
   principals = var.principals
+  iam_role   = module.main_account_events.assume_role
 
   providers = {
     aws = "aws.member"
