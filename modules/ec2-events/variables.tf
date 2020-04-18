@@ -12,7 +12,7 @@ variable "target_eventbus_arn" {
 }
 
 variable "iam_role" {
-  description = "Bucket to use for artifacts"
+  description = "Main IAM role to assume"
   type = object({
     id  = string
     arn = string
@@ -23,13 +23,13 @@ variable "iam_role" {
   }
 }
 
+variable "destination_account" {
+  description = "(Optional) Main AWS Account ID."
+  default     = "012345678900"
+}
+
 variable "description" {
   default     = "Managed by Terraform"
   type        = string
   description = "(Optional) The description of the all resources."
-}
-
-variable "destination_account" {
-  description = "(Optional) Main AWS Account ID."
-  default     = "012345678900"
 }
