@@ -66,7 +66,7 @@ resource "aws_cloudwatch_event_target" "event_target" {
 resource "aws_sqs_queue" "events_queue" {
   count = var.create ? 1 : 0
 
-  name = "${var.name}-guardduty-finding-events"
+  name = "${var.name}-ec2-finding-events"
 }
 
 #################################################################
