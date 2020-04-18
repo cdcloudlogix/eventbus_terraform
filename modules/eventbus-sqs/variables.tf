@@ -24,7 +24,3 @@ variable "create" {
   description = "(Optional) Whether to create these resources or not"
   default     = false
 }
-
-variable "target_eventbus_arn" {
-  default = ""
-}
