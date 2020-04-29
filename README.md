@@ -10,6 +10,8 @@ This repository is an example of how to send EC2 notifications with CloudWatch e
 
 ![Image](EventBus.png?raw=true)
 
+You can also follow this [guideline](https://medium.com/@obutterbach/aws-eventbus-with-terraform-ea5f3873dd49) for more information
+
 ## Usage
 
 This is divided in 2 different parts, one for the main account, one for one of your member account. Keep in mind that EventBus is restricted by region, you will need to this main module for each regions.
